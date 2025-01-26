@@ -12,7 +12,9 @@ In this task, we installed python 3.10 from scratch and then we created the virt
 We got several errors like the SSL not founnd; SQLLite not found etc. Which we encountered by installing these on server using the make commands and properly configuring the paths of the python and the other module.
 
 We had to build python everytime we got something new.
-The screenshots for the errors and the history file is present in Task 1
+The screenshots for the errors and the history file is present in Task_1_screenshots_and_errors.
+
+So please download this pdf where we have discussed all the screenshots, commands and errors.
 
 # Task 2
 
