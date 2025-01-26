@@ -1,0 +1,64 @@
+1 history
+2 sudo apt list | grep i python3.10
+3 sudo apt-get remove python3.10
+4 wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
+5 tar -xvzf Python-3.10.0.tgz
+6 cd Python3.10.0
+7 1s
+8 cd Python-3.10.0
+9./configure --enable-optimizations
+10 mkdir -p $HOME/python3.10
+11./configure --prefix=$HOME/python3.10 --enable-optimizations
+12 make-j$(nproc)
+13 make install
+14 ls
+15 cat config.log
+16 cd
+17 1s
+18 cd python3.10
+19 ls
+20 python3
+21 python-v
+22 python -V
+23 python3 -V
+24 cd Python-3.10.0
+25 cd
+26 cd
+27 cd Python-3.10.0
+28 1s
+29 python3 -m venv myvenv
+30 source myvenv/bin/activate
+31 ls
+32 cd python
+33 python
+34 python3
+35 export PATH=$HOME/python3.10/bin:$PATH
+36 echo 'export PATH=$HOME/python3.10/bin:$PATH' >> ~/.bashrc
+37 python3.10 --version
+38 python3
+39 wget https://www.openssl.org/source/openssl-1.1.1u.tar.gz
+40 tar -xvzf openssl-1.1.1u.tar.gz
+41 cd openssl-1.1.1u
+42 ./config --prefix=$HOME/openssl --openssldir=$HOME/openssl
+43 make -j$(nproc)
+44 make install
+45 cd ..
+46 cd Python-3.10.0
+47 export LDFLAGS="-L$HOME/openssl/lib"
+48 export CPPFLAGS="-I$HOME/openssl/include"
+49 ./configure --prefix=$HOME/opt/python-3.10.6 --with-openssl=$HOME/opt/ssl --with-openssl-rpath=auto
+50 make -j$(nproc)
+51 make install
+52 python3.10 -m ssl
+53 pip install --upgrade certifi
+54 pip install label-studio
+55 label-studio
+56 wget https://www.sqlite.org/2025/sqlite-autoconf-3480000.tar.gz
+57tar -xvzf sqlite-autoconf-3480000.tar.gz
+58 cd sqlite-autoconf-3480000
+59 ./configure --prefix=$HOME/sqlite
+60 make
+61 make install
+62 export PATH=$HOME/sqlite/bin:$PATH
+63 sqlite --version
+64 label-studio
