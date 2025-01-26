@@ -46,7 +46,7 @@
 46 cd Python-3.10.0
 47 export LDFLAGS="-L$HOME/openssl/lib"
 48 export CPPFLAGS="-I$HOME/openssl/include"
-49 ./configure --prefix=$HOME/opt/python-3.10.6 --with-openssl=$HOME/opt/ssl --with-openssl-rpath=auto
+49 ./configure --prefix=$HOME/python3.10 --with-openssl=$HOME/openssl --with-openssl-rpath=auto
 50 make -j$(nproc)
 51 make install
 52 python3.10 -m ssl
