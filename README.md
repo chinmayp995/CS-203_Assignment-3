@@ -16,6 +16,9 @@ The screenshots for the errors and the history file is present in Task_1_screens
 
 So please download this pdf where we have discussed all the screenshots, commands and errors.
 
+The image below shows that label-studio was avaiable on our linux server
+
+![Alt text](<label-studio_screenshot.jpg>)
 # Task 2
 
 Here, we used label-studio on our local Windows OS where we annotated our data which was provided.
